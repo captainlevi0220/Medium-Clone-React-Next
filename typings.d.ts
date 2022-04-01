@@ -4,7 +4,7 @@ export interface Post {
   title: string
   author: {
     name: string
-    img: string
+    image: string
   }
   description: string
   mainImage: {

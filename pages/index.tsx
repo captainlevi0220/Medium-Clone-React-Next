@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import Header from '../components/Header'
 import { sanityClient, urlFor } from '../sanity'
 import { Post } from '../typings'
@@ -39,6 +40,23 @@ export default function Home({posts}: Props) {
         />
       </div>
       {/* Posts */}
+      <div>
+        {posts.map((post) => (
+          <Link key={post._id} href={`/post/${post.slug.current}`}>
+            <div>
+              <img src={urlFor(post.mainImage).url()!} alt="" />
+              <div>
+                <div>
+                  <p>{post.title}</p>
+                  <p>{post.description} by {post.author.name}</p>
+                </div>
+
+                <img src={urlFor(post.author.image).url()!} alt='' />
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }

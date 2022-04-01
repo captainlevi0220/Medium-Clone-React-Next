@@ -28,4 +28,8 @@ npm install -g @sanity/cli
 sanity init
 // Create new project > type_project_name (Use default dataset configuration)
 // Select project template > blog (schema)
+cd medium-clone (sanity folder)
+sanity login
+sanity start
+// localhost:3333/desk
 ```
