@@ -23,7 +23,18 @@ function Post({ post }: Props) {
     formState: { errors },
   } = useForm<IFormInput>()
 
-  const onSubmit: SubmitHandler<IFormInput> = async (data) => {}
+  const onSubmit: SubmitHandler<IFormInput> = async (data) => {
+    await fetch('/api/createComment', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    })
+      .then(() => {
+        console.log(data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }
 
   return (
     <main>
@@ -107,7 +118,7 @@ function Post({ post }: Props) {
             {...register('email', { required: true })}
             className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-offset-yellow-500 outline-none focus:ring"
             placeholder="John Appleseed"
-            type="text"
+            type="email"
           />
         </label>
         <label className="block mb-5">
