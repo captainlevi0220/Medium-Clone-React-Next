@@ -36,3 +36,9 @@ npm i react-portable-text
 npm install react-hook-form@7.24.1
 npm i @sanity/client@2.24.3-new-image-file-input.118
 ```
+
+links:
+
+```
+https://medium-sanity-levi-clone.sanity.studio/
+```
