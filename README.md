@@ -32,4 +32,5 @@ cd medium-clone (sanity folder)
 sanity login
 sanity start
 // localhost:3333/desk
+npm i react-portable-text
 ```
