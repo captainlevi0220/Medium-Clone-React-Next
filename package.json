@@ -6,10 +6,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@sanity/client": "2.24.3-new-image-file-input.118",
     "next": "12.0.9-canary.3",
     "next-sanity": "0.4.1-beta.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-hook-form": "7.24.1",
     "react-portable-text": "^0.4.3"
   },
