@@ -97,7 +97,7 @@ function Post({ post }: Props) {
         </div>
       </article>
 
-      <hr className="max-w-lg my-5 mx-auto-border border-yellow-500" />
+      <hr className="max-w-lg my-5 mx-auto border border-yellow-500" />
 
       {submitted ? (
         <div className="flex flex-col p-10 my-10 bg-yellow-500 text-white max-w-2xl mx-auto">
