@@ -50,7 +50,7 @@ export default function Home({ posts }: Props) {
               <div className="flex justify-between p-5 bg-white">
                 <div>
                   <p className="text-lg font-bold">{post.title}</p>
-                  <p>
+                  <p className="text-xs">
                     {post.description} by {post.author.name}
                   </p>
                 </div>
