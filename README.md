@@ -33,4 +33,5 @@ sanity login
 sanity start
 // localhost:3333/desk
 npm i react-portable-text
+npm install react-hook-form@7.24.1
 ```
